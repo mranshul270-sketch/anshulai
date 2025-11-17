@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JARVIS POWERED BY ANSHUL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="bg-grid"></div>
+    <div class="hud-corners hud-corner-1"></div>
+    <div class="hud-corners hud-corner-2"></div>
+    <div class="hud-corners hud-corner-3"></div>
+    <div class="hud-corners hud-corner-4"></div>
+
+    <header class="top-bar">
+      <div class="brand">JARVIS POWERED BY ANSHUL</div>
+      <div class="status-indicator" id="status-indicator">IDLE</div>
+    </header>
+
+    <main class="layout">
+      <section class="left-panel">
+        <div class="panel-title">CONVERSATION LOG</div>
+        <div id="chat-log" class="chat-log"></div>
+      </section>
+
+      <section class="core-panel">
+        <div class="core-orbit"></div>
+        <div class="core-ring"></div>
+        <div class="core" id="core">
+          <div class="core-inner"></div>
+        </div>
+        <div class="core-shadow"></div>
+        <div class="core-label">LISTENING INTERFACE</div>
+
+        <div class="controls">
+          <button id="mic-btn" class="control-btn">
+            <span id="mic-icon">🎙️</span>
+            <span id="mic-label">Start Listening</span>
+          </button>
+          <button id="stop-btn" class="control-btn secondary">
+            ■
+          </button>
+        </div>
+
+        <div class="text-input-wrapper">
+          <input id="text-input" class="text-input" placeholder="Type a command for Jarvis and press Enter..." />
+        </div>
+      </section>
+
+      <section class="right-panel">
+        <div class="panel-title">SYSTEM TELEMETRY</div>
+        <div class="telemetry-grid">
+          <div class="telemetry-item">
+            <div class="label">VOICE IN</div>
+            <div class="value" id="telemetry-voice-in">READY</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="label">VOICE OUT</div>
+            <div class="value" id="telemetry-voice-out">READY</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="label">ENGINE</div>
+            <div class="value" id="telemetry-engine">JARVIS POWERED BY ANSHUL</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="label">MODE</div>
+            <div class="value">ASSIST // OPS</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-bar">
+      <span>JARVIS POWERED BY ANSHUL · Local browser demo</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+<!-- WUUNU SNIPPET - DON'T CHANGE THIS (START) -->
+<script>window.__WUUNU_WS__ = "http://127.0.0.1:53578/";</script>
+<script id="wuunu-widget-script" data-wuunu-widget src="https://cdn.jsdelivr.net/npm/@wuunu/widget@0.1?cacheParam=640" defer crossOrigin="anonymous"></script>
+<!-- WUUNU SNIPPET - DON'T CHANGE THIS (END) -->
+</body>
+</html>
